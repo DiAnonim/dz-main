@@ -4,14 +4,14 @@
 }
 
 .galleryStyle img{
-    width: 200px;
+    width: 300px;
     margin-left: 10px;
     margin-top: 10px;
 }
 
 .galleryStyle{
     background-color: rgb(205, 244, 231);
-    height: 600px;
+    height: 750px;
 }
 
 .galleryStyle h2{
