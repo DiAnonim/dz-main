@@ -1,24 +1,39 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.galleryStyle img{
-    width: 300px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.galleryStyle{
-    background-color: rgb(205, 244, 231);
-    height: 750px;
-}
-
-.galleryStyle h2{
-    color: brown;
-}
-
 .homePage{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+
+.homePage-numb button{
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.homePage-Zero button{
+    width: 150px;
+    height: 50px;
+    color: aliceblue;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    right: 25px;
+    bottom: 50px;
+   
+}
+
+.homePage-Enter button{
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.inp{
+    width: 193px;
+    height: 50px;
+    background-color: rgb(105, 101, 101);
+    color: aliceblue;
+    font-size: 25px;
 }
