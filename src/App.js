@@ -1,24 +1,19 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-
-import Home from './components/home';
-import InfoCity from './components/InfoCity';
-import AttractionFamous from './components/famousAttraction ';
-import Attractions from './components/otherAttractions';
-import Photo from './components/photo';
-
-function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/Info-City' element={<InfoCity></InfoCity>}></Route>
-        <Route path='/famousAttraction' element={<AttractionFamous></AttractionFamous>}></Route>
-        <Route path='/otherAttractions' element={<Attractions></Attractions>}></Route>
-        <Route path='/photo' element={<Photo></Photo>}></Route>
-      </Routes>
-    </div>
-  );
-}
-
+import './App.css'; 
+import React from "react"; 
+import { useDispatch, useSelector } from 'react-redux'; 
+import { minecraftGetMobsAction } from './store/creators/minecraftCreators';
+ 
+ 
+ 
+function App() { 
+  const selector = useSelector() 
+  const dispatch = useDispatch()  
+  return ( 
+    <div className="App"> 
+      <span>{selector.mobs}</span> 
+     <button onClick={()=>dispatch(minecraftGetMobsAction(['criper','steev']))}>get mobs</button> 
+    </div> 
+  ); 
+} 
+ 
 export default App;
