@@ -6,8 +6,15 @@ function Home() {
     const [state, setState] = useState({
         res: 0,
         newInp: "",
+        op: "null",
     });
 
+    function getBtn(e) {
+        setState((prev) => ({
+            ...prev,
+            op: e,
+        }))
+    }
 
     return <div>
         <input className="inp" type="text" value={state.res} />
@@ -28,10 +35,14 @@ function Home() {
                 <Button valState={setState} number="9"></Button>
             </div>
             <div className="homePage-Enter">
+                <button onClick={(e) => getBtn(e.value.target)}>+</button>
+                <button>-</button>
+                <button>*</button>
+                <button>/</button>
+                {/* <Button valState={setState} number="-"></Button>
                 <Button valState={setState} number="+"></Button>
-                <Button valState={setState} number="-"></Button>
                 <Button valState={setState} number="*"></Button>
-                <Button valState={setState} number="/"></Button>
+                <Button valState={setState} number="/"></Button> */}
             </div>
         </div>
         <div className="homePage-Zero">
