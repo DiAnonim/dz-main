@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 
 function Home() {
     return <div className="homePage">
-        <Link to='/Info-City'>Информация о городе</Link>
-        <Link to='/famousAttraction'>Самая известная достопримечательность</Link>
-        <Link to='/otherAttractions'>Другие достопримечательности</Link>
-        <Link to='/Photo'>Фотографии города</Link>
+        <Link to='/Bio'>Краткая информация обо мне</Link>
+        <Link to='/infoCity'>Информация о городе</Link>
+        <Link to='/recipe'>Кулинарный рецепт</Link>
+        <Link to='/Shakespeare'>Шекспир</Link>
+        <Link to='/FavoriteMovie'>Любимый кинофильм</Link>
+        <Link to='/aboutMe'>Персональная страница</Link>
     </div>
 }
 
