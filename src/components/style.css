@@ -23,6 +23,17 @@
    
 }
 
+.homePage-Delete button{
+    width: 200px;
+    height: 50px;
+    color: aliceblue;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    /* right: 25px; */
+    bottom: 50px;
+}
+
 .homePage-Enter button{
     width: 50px;
     height: 50px;

@@ -1,7 +1,6 @@
-function Button({ number, valState }) {
-
+function Button({ op, number, valState }) {
+    
     return <div>
-
         <button onClick={() => valState((prev) => ({
             ...prev,
             newInp: number,

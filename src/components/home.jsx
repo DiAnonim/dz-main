@@ -37,6 +37,13 @@ function Home() {
         <div className="homePage-Zero">
             <Button valState={setState} number="0"></Button>
         </div>
+        <div className="homePage-Delete">
+            <button onClick={() => setState((prev) => ({
+                ...prev,
+                newInp: "",
+                res: 0
+            }))}>Delete</button>
+        </div>
     </div>
 }
 
