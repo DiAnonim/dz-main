@@ -1,0 +1,18 @@
+@mixin button() {
+    background-color: hsla(210, 70%, 60%, 1);
+    transition: 0.3s;
+    padding: 1rem;
+    color: white;
+
+    &:hover{
+        background-color: hsla(210, 70%, 70%, 1);
+    }
+
+    &:active{
+        transform: translateY(4px);
+    }
+}
+
+.button {
+    @include button();
+}
