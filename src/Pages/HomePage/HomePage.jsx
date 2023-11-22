@@ -10,24 +10,25 @@ function HomePage() {
 
         todos: [
             {
-                id: 1,
                 title: "task1",
                 task: "Do something",
                 date: "20.12.2023",
             },
             {
-                id: 2,
                 title: "task2",
                 task: "Don't something",
                 date: "06.07.2023",
             },
             {
-                id: 3,
                 title: "task3",
                 task: "I love Anime",
                 date: "15.02.2023",
             },
         ],
+        newTitle: "",
+        newTask: "",
+        newDate: "",
+
 
     })
 
