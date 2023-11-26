@@ -3,12 +3,18 @@
     justify-content: center;
 }
 
+body{
+    background-color: rgb(249, 238, 238);
+}
+
 
 .homePage-numb button{
     width: 50px;
     height: 50px;
     color: aliceblue;
     background-color: black;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
 }
 
 .homePage-Zero button{
@@ -20,6 +26,7 @@
     position: relative;
     right: 25px;
     bottom: 50px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
    
 }
 
@@ -30,8 +37,9 @@
     background-color: black;
     margin: auto;
     position: relative;
-    /* right: 25px; */
     bottom: 50px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
 }
 
 .homePage-Enter button{
@@ -48,4 +56,5 @@
     background-color: rgb(105, 101, 101);
     color: aliceblue;
     font-size: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }

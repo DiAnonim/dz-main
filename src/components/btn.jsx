@@ -1,34 +1,41 @@
 function Button({ op, number, valState }) {
-    let newRes;
 
-    if(op == "+"){
-        
+    const BtnOper = () => {
+        if (op === "+") {
+            valState((prev) => ({
+                ...prev,
+                res: parseInt(prev.res) + parseInt(number)
+            }))
+        }
+        else if (op === "-") {
+            valState((prev) => ({
+                ...prev,
+                res: parseInt(prev.res) - parseInt(number)
+            }))
+        }
+        else if (op === "*") {
+            valState((prev) => ({
+                ...prev,
+                res: parseInt(prev.res) * parseInt(number)
+            }))
+        }
+        else if (op === "/") {
+            valState((prev) => ({
+                ...prev,
+                res: parseInt(prev.res) / parseInt(number)
+            }))
+
+        }
+        else {
+            valState((prev) => ({
+                ...prev,
+                res: number
+            }))
+        }
     }
 
-    // switch (op) {
-    //     case "+":
-    //         // newRes = parseInt(prev.res) + parseInt(number)
-    //         // return <div>
-    //         //     <button onClick={() => valState((prev) => ({
-    //         //         ...prev,
-    //         //         newInp: number,
-    //         //         res: 
-    //         //     }))}>{number}</button>
-    //         // </div >
-    //         break;
-    //     case "-":
-    //     case "*":
-    //     case "/":
-    //     default:
-    //         return;
-    // }
-
     return <div>
-        <button onClick={() => valState((prev) => ({
-            ...prev,
-            newInp: number,
-            res: parseInt(prev.res) + parseInt(number)
-        }))}>{number}</button>
+        <button onClick={BtnOper}>{number}</button>
     </div >
 }
 
